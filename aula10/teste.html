@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        body {
+            background: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            background: rgb(41, 54, 231);
+        }
+        div#algo {
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando</h1>
+    <h2>P1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quam ducimus fuga repellat reiciendis, non repellendus ipsam molestias perspiciatis quibusdam expedita eos provident nemo dicta. Blanditiis amet error repudiandae corrupti?</p>
+    <div id = algo>
+        Interaja...
+    </div>
+    <h2>P2</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore veniam nesciunt aliquam sed? Dolore illo ullam expedita ipsum? Voluptates laborum fugiat nostrum nihil maiores nulla, non animi consequuntur blanditiis adipisci!</p>
+    <script>
+        var a = document.getElementById('algo')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseout', voltar)
+        a.addEventListener('mouseover', sobre)
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+        function voltar() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'green'
+        }
+        function sobre() {
+            a.innerText = 'Entrou!'
+            a.style.background = 'blue'
+        }
+    </script>
+</body>
+</html>
